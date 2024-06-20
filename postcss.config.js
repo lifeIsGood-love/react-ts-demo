@@ -20,8 +20,8 @@ module.exports = () => ({
       utf8: false, // 兼容1px问题， 必须在postcss-px-to-viewport前面
     }),
     require("postcss-px-to-viewport")({
-      viewportWidth: 750, // 视窗的宽度
-      viewportHeight: 1334, // 视窗的高度
+      viewportWidth: 1280, // 视窗的宽度
+      viewportHeight: 800, // 视窗的高度
       unitPrecision: 5, // 指定px转换为视窗单位值的小数位数
       viewportUnit: "vw", // 指定需要转换的视窗单位
       selectorBlackList: [".ignore", ".hairlines"], // 指定不转换为视窗点位的类，可自定义

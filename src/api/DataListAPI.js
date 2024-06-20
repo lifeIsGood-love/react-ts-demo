@@ -1,8 +1,8 @@
 import Server from "./BaseServer";
-import getUuid from '@jmdd/jmdd-get-uuid'
+// import getUuid from '@jmdd/jmdd-get-uuid'
 
 class FeedsAPI extends Server {
-  async getFeedsData(param, uuidstr) {
+  async getRDCData(param, uuidstr) {
     return this.axios("post", "/getCustomizeFeedsList", {
       params: {
         appid: "contenth5_common",

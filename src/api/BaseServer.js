@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { jdBaseURL } from '@/api/APIConfig';
+import { jdBaseURL } from '../api/APIConfig';
 
 // axios不支持jsonp请求,需要自己封装
 axios.jsonp = (_url, options = {}) => {

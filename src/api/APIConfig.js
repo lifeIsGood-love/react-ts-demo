@@ -7,13 +7,15 @@ const server = window.location.host.indexOf('beta') > -1;
 const betaPrdAPI = window.location.href.indexOf('usePrdApi=true') > -1
 
 if (server || process.env.NODE_ENV === 'development') {
-  jdBaseURL = '//beta-api.m.jd.com/client.action';
+  // jdBaseURL = '//beta-api.m.jd.com/client.action';
+  jdBaseURL ='//api.m.jd.com/client.action';
   if (betaPrdAPI) {
     jdBaseURL = '//api.m.jd.com/client.action';
   }
 } else {
   jdBaseURL = '//api.m.jd.com/client.action';
 }
+
 export {
   jdBaseURL
 };

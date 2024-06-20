@@ -1,0 +1,14 @@
+.api-contain{
+    width: 100vw;
+    height: 100vh;
+    background-color: #262D40;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    .content{
+        margin-top: 80px;
+        background-color: #F7F9FB;
+        width: 90%;
+        height: 80%;
+    }
+}

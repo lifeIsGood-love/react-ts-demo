@@ -1,0 +1,80 @@
+.dataform{
+    min-height: 100vh;
+    position: relative;
+    &-header{
+        width: 100%;
+        display: flex;
+        background-color: #212843;
+        padding-left: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &-logo{
+        height: 80px;
+        width: 200px;
+        text-align: center;
+        line-height: 100px;
+        margin-left:8px;
+    }
+    &-txt{
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 90px;
+        // background-color:linear-gradient(#212843, #EC6F41);
+        color: #EC6F41;
+    }
+    // &-title{
+    //     position: fixed;
+    //     height: 100px;
+    //     width: 100%;
+    //     text-align: center;
+    //     line-height: 100px;
+    //     font-size: 32px;
+    //     font-weight: bolder;
+    //     color: #fff;
+    //     background-color: #212843;
+    // }
+    .ant-tabs-tab{
+        font-size: 24px;
+    } 
+    .ant-tabs-ink-bar{
+        background-color: #EC6F41;
+    }
+    .ant-tabs-tab:hover{
+        color: #EC6F41;
+    }
+    .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+        color: #EC6F41;
+    }
+    .ant-tabs-tab-active{
+        border-color: #EC6F41;
+    }
+
+    .ant-layout{
+        // position: absolute;
+        // margin-top: 100px;
+        min-height: 100vh;
+        // margin-top: 90px;
+        .ant-layout-sider{
+            background-color: #212843;
+            width: 220px;
+            margin-top: 90px;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+        .ant-layout-content{
+            min-width: 1000px;
+        }
+    }
+
+    .ant-menu{
+        background-color: #212843;
+        .ant-menu-item-selected{
+            background-color:#EC6F41;
+        }
+    }
+}

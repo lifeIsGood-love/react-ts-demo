@@ -6,6 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "pages/*": ["src/pages/*"],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +24,9 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
+    "include": [
     "src"
   ]
 }
+
+// ÷

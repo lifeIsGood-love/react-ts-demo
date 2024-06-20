@@ -1,0 +1,90 @@
+.deviceform{
+    &-data{
+        margin-top: 20px;
+    }
+    &-icon{
+        width: 30px;
+    }
+    &-edit-icon{
+        width: 25px;
+    }
+    &-search{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .ant-input{
+            width: 200px;
+            margin: 0 30px 0 10px;
+            border-width: 1px;
+        }
+        .ant-btn-primary{
+            background-color:#EC6F41 ;
+        }
+        .ant-input:focus{
+            border-color: #EC6F41;
+        }
+        .ant-input:active{
+            border-color: #EC6F41;
+        }
+        .ant-input:hover{
+            border-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+            background-color: #212843;
+        }
+    }
+    &-btns{
+        position: absolute;
+        top: -61px;
+        right: 0px;
+    }
+    &-btn{
+        position: absolute;
+        right: 124px;
+        img{
+            width: 30px;
+        }
+    }
+    &-add{
+        position: absolute;
+        right: 0px;
+    }
+    .ant-table{
+        .ant-table-thead{
+            .ant-table-cell{
+                background-color:rgb(255, 238, 238); 
+            }
+        }
+        .ant-table-cell-row-hover{
+            background-color:rgb(255, 238, 238) !important; 
+        }
+    }
+    .ant-pagination {
+        .ant-pagination-item-active{
+            border-color: #EC6F41;
+            a{
+                color: #EC6F41;
+            }
+        }
+        .ant-pagination-item-active:hover{
+            border-color: #EC6F41;
+        }
+        .ant-pagination-options-size-changer:hover .ant-select-selector {
+            border-color: #EC6F41 !important; 
+        }
+        .ant-select-focused .ant-select-selector{
+            border-color: #EC6F41 !important; 
+        }
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+            background-color: rgb(255, 238, 238); 
+        }
+    }
+}

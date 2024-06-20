@@ -1,0 +1,163 @@
+.demo{
+    box-sizing: border-box;
+    // padding: 20px;
+    min-width: 1200px;
+    height: 100vh;
+    background-image: url('../../images/four.jpg');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    top:0;
+    left: 0;
+    // z-index: ;
+    // zoom:1;
+    position: relative;
+
+    &-video{
+        width: 100vw;
+        height: 100%;
+        object-fit:fill;
+    }
+
+    &-logo{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 250px;
+        height: 81px;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        border: 0;
+    }
+  
+    &-body{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        width: 100%;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%,-50%);
+        z-index: 2;
+        &-right{
+            width:40%;
+            &-bg{
+                padding: 20px;
+                width: 375px;
+                height: 590px;
+                background-color: rgba($color:#F6F8FA, $alpha: 1);  // #E1E9EE
+                border-radius: 28px;  
+                box-sizing: border-box;
+                &-input{
+                    width: 100%;
+                    text-align: center;
+                }
+                &-href{
+                    // text-decoration: underline;
+                    font-size: 12px;
+                    color: #EC6F41;
+                }
+                &-button{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                .ant-btn-primary{
+                    background-color: rgba(33, 40, 67, 0.5);;
+                    width: 300px;
+                    border-radius: 16px;
+                }
+                .ant-btn-primary:disabled{
+                    color:#fff
+                }
+                .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+                    background-color: rgba(33, 40, 67, 0.9);;
+                }
+                .ant-input{
+                    height: 45px;
+                    margin-bottom: 10px;
+                    // width: 340px;
+                    border-radius: 8px;
+                }
+                .ant-input:hover {
+                    border-color: rgba($color:#EC6F41, $alpha:0.6);// #EC6F41 #212843
+                    box-shadow: 0px 0px 5px 0px rgba($color:#EC6F41, $alpha:0.6);
+                }
+                .ant-input:focus {
+                    border-color: #EC6F41;
+                    // box-shadow: 0px 0px 12px 0px rgba(33, 40, 67, 0.6);
+                    box-shadow: 0px 0px 5px 0px rgba($color:#EC6F41, $alpha:0.6);
+                }
+                .ant-radio{
+                    margin-bottom: 15px;
+                }
+
+                &-header{
+                    width: 100%;
+                    padding-top: 40px;
+                    text-align: center;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        // -webkit-animation: rotation 3s linear infinite;
+                        // animation: rotation 3s linear infinite;
+                        // @keyframes rotation {
+                        //     0% {
+                        //         transform: rotate(0deg);
+                        //         -webkit-transform: rotate(0deg);
+                        //     }
+                        //     100% {
+                        //         transform: rotate(0deg);
+                        //         -webkit-transform: rotate(360deg);
+                        //     }
+                        // }
+                    }
+                    &-version{
+                        margin: 16px 0px;
+                        color: #212843;
+                    }
+                    &-title{
+                        margin: 16px 0px;
+                        font-weight: bold;
+                        font-size: 24px;
+                        color: #212843;
+                    }
+                    &-note{
+                        color: #EC6F41;
+                    }
+                }              
+            }
+        }
+        &-wipper{
+            width: 60%;
+            // background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-left{
+            width: 500px;
+        }
+        &-card{
+            &-img{
+                // overflow-clip-margin: content-box;
+                overflow: clip;
+                height: 500px;
+                width: 500px;
+            }
+            &-txt{
+                margin-top: 10px;
+                font-size: 28px;
+                color: white;
+                text-align: center;
+            }
+        }
+        .slick-dots-bottom{
+            bottom: -20px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* 隐藏水平滚动条 */
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .left {
+      width: 200px; /* 左侧宽度固定 */
+      background-color: #eee;
+      position: relative;
+    }
+
+    .right {
+      flex-grow: 1; /* 右侧内容占据剩余空间 */
+      background-color: #f0f0f0;
+      position: absolute;
+      top: 0;
+      left: 200px; /* 左侧宽度 */
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <!-- 左侧内容 -->
+    <h2>左侧内容</h2>
+    <p>这是左侧的一些内容。</p>
+  </div>
+  <div class="right">
+    <!-- 右侧内容 -->
+    <h2>右侧内容</h2>
+    <p>这是右侧的一些内容。</p>
+  </div>
+</div>
+
+</body>
+</html>

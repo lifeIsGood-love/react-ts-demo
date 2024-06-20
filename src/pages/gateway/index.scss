@@ -1,0 +1,206 @@
+.gatewayForm{
+    border-style: solid;
+    border-width: 4px 0 0 0;
+    border-color: #EC6F41;
+    background-color:#F6F6F6;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    &-title{
+        width: 100%;
+        text-align: center;
+        line-height: 80px;
+        background-color:#212843;
+        color:#EC6F41;
+        font-size: 24px;
+        font-weight: bolder;
+        height: 80px;
+    }
+    &-table{
+        min-height: 100vh;
+        min-width: 1100px;
+        padding: 10px 30px;
+        background-color: #fff;
+    }
+    &-data{
+        margin-top: 20px;
+    }
+    &-icon{
+        width: 30px;
+    }
+    &-edit-icon{
+        width: 25px;
+    }
+    &-search{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .deviceform-resetbtn{
+            background-color:#212843 !important;
+        }
+        .ant-input{
+            width: 120px;
+            margin: 0 30px 0 10px;
+            border-width: 1px;
+        }
+        .ant-btn-primary{
+            background-color:#EC6F41 ;
+        }
+        .ant-input:focus{
+            border-color: #EC6F41;
+        }
+        .ant-input:active{
+            border-color: #EC6F41;
+        }
+        .ant-input:hover{
+            border-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+            background-color: #212843;
+        }
+    }
+    &-btns{
+        position: absolute;
+        top: -61px;
+    }
+    &-action{
+        vertical-align: middle;
+    }
+    &-edit-icon{
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    &-noactivebtn{
+        position: absolute;
+        right: 124px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-color: #037FF5;
+        img{
+            width: 30px;
+        }
+    }
+    &-activebtn{
+        position: absolute;
+        border-color: #037FF5;
+        right: 124px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        animation: zoomAnimation 1s infinite alternate;
+        img{
+            width: 30px
+        }
+
+              /* 缩放动画 */
+              @keyframes zoomAnimation {
+                0% {
+                  transform: scale(1);
+                }
+                100% {
+                  transform: scale(1.5);
+                }
+              }
+    }
+    &-add{
+        position: absolute;
+        right: 0px;
+    }
+    &-detailmodal{
+        .ant-modal-header{
+            text-align: center;
+        }
+        .ant-modal-content{
+            width: 723px;
+        }
+        .ant-table{
+            .ant-table-thead{
+                .ant-table-cell{
+                    background: #f9ede7;
+                    // background-color:rgb(255, 238, 238); 
+                }
+            }
+        }
+    }
+    .ant-table{
+        .ant-table-tbody > tr:nth-child(even) {
+            background-color: #fafafa; /* 设置偶数行的背景色 */
+          }
+        .ant-table-cell{
+            text-align: center;
+        }
+        .ant-table-thead{
+            .ant-table-cell{
+                background: #f9ede7;;
+                // background-color:rgb(255, 238, 238); 
+            }
+        }
+        .ant-table-cell-row-hover{
+            // background-color:rgb(255, 238, 238) !important; 
+            // background: #f9ede7;
+            background: #f9ede7;
+        }
+        .ant-empty-description{
+            font-size: 24px;
+        }
+        .ant-empty-image{
+            height: 80px;
+
+        }
+    }
+    .ant-pagination {
+        .ant-pagination-item-active{
+            border-color: #EC6F41;
+            a{
+                color: #EC6F41;
+            }
+        }
+        .ant-pagination-item-active:hover{
+            border-color: #EC6F41;
+        }
+        .ant-pagination-options-size-changer:hover .ant-select-selector {
+            border-color: #EC6F41 !important; 
+        }
+        .ant-select-focused .ant-select-selector{
+            border-color: #EC6F41 !important; 
+        }
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+            background-color: rgb(255, 238, 238); 
+        }
+    }
+    &-configmodal{
+        .ant-modal-header{
+            text-align: center;
+        }
+        .ant-modal-body{
+            text-align: center;
+        }
+        .ant-btn-primary{
+            background-color:#EC6F41 ;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus{
+            background-color: #EC6F41;
+        }
+        .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+            background-color: #212843;
+        }
+        .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+            color: #EC6F41;
+            border-color:#EC6F41;
+        }
+    }
+}
