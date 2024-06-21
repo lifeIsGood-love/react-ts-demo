@@ -1,6 +1,5 @@
 import React , {useEffect,useState } from 'react';
 import { Carousel , Input , Radio , Button} from 'antd';
-import Translate from '../../components/transkate'
 import inductImg from '../../images/one.png';
 import faviconImg from '../../images/favicon.png'
 import './index.scss'
@@ -8,7 +7,6 @@ import 'animate.css';
 
 const LoginPage = () => {
   const prefixCls = 'demo';
-  console.log('print-env',process.env)
   // const [buttonState , setButtonState] = useState(true);
 
   return <div className={`${prefixCls}`}>
@@ -26,7 +24,6 @@ const LoginPage = () => {
           className={`${prefixCls}-logo `} 
         />
       </div>
-      <Translate />
       <div className={`${prefixCls}-body`}>
         <div className={`${prefixCls}-body-wipper`}>
           <div className={`${prefixCls}-body-left`}>
